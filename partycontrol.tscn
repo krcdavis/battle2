@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://hryvg0n1ein8"]
+
+[ext_resource type="Script" path="res://partycontrol.gd" id="1_0xcfv"]
+
+[node name="partycontrol" type="Node2D"]
+script = ExtResource("1_0xcfv")

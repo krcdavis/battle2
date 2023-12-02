@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://f3avy8cwmy5x"]
+
+[ext_resource type="Script" path="res://btlw1on1.gd" id="1_pydh4"]
+[ext_resource type="PackedScene" uid="uid://cb2iaaorejxp4" path="res://battlefield_placeholder.tscn" id="2_py0dq"]
+[ext_resource type="PackedScene" uid="uid://dr4ci8etwhka6" path="res://battlehud.tscn" id="3_4nh1q"]
+[ext_resource type="PackedScene" uid="uid://c2we0hwlm5gfe" path="res://monmodels/eggry.glb" id="4_lcesd"]
+
+[node name="btlw1on1" type="Node3D"]
+script = ExtResource("1_pydh4")
+
+[node name="battlehud" parent="." instance=ExtResource("3_4nh1q")]
+visible = false
+
+[node name="battlefield_placeholder" parent="." instance=ExtResource("2_py0dq")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.573576, 0.270742, -0.773116, 0, 0.943801, 0.330514, 0.819152, -0.189575, 0.541342, -12.56, 35.797, 31.355)
+current = true
+fov = 60.6
+
+[node name="point0" type="Node3D" parent="."]
+transform = Transform3D(-0.987292, 0, -0.158916, 0, 1, 0, 0.158916, 0, -0.987292, -1.28, 29.3438, 30.001)
+
+[node name="eggry" parent="point0" instance=ExtResource("4_lcesd")]
+visible = false
+
+[node name="point1" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.27, 29.6815, -30.286)
+
+[node name="eggry" parent="point1" instance=ExtResource("4_lcesd")]
+visible = false

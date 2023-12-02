@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://mo7t3wl8b7s7"]
+
+[ext_resource type="Script" path="res://optbase.gd" id="1_7pjsl"]
+[ext_resource type="Texture2D" uid="uid://cok7w74jwrp6n" path="res://flats/btl-optng.png" id="2_ehi4u"]
+[ext_resource type="Texture2D" uid="uid://cpgqg502ubnx6" path="res://flats/btl-optn.png" id="3_lpiqs"]
+[ext_resource type="Texture2D" uid="uid://h2xlmumpyk7l" path="res://flats/arr.png" id="4_kipba"]
+
+[node name="optbase" type="Node2D"]
+script = ExtResource("1_7pjsl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ehi4u")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture = ExtResource("3_lpiqs")
+centered = false
+
+[node name="Label" type="Label" parent="."]
+offset_left = 27.0
+offset_top = 15.0
+offset_right = 153.0
+offset_bottom = 41.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "AAAAAAAAAA"
+
+[node name="Arr" type="Sprite2D" parent="."]
+position = Vector2(-14, 4)
+texture = ExtResource("4_kipba")
+centered = false

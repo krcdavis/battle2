@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://d0ell484i2je1"]
+
+[ext_resource type="Texture2D" uid="uid://c5ppys7ltmhu0" path="res://flats/btl_left_big.png" id="1_nyfbw"]
+[ext_resource type="Texture2D" uid="uid://cy4pffp3t3e2x" path="res://flats/bg.png" id="2_lfvjt"]
+[ext_resource type="Script" path="res://btl_left_big.gd" id="2_v5pwv"]
+[ext_resource type="Texture2D" uid="uid://qfsbyyp0ew7c" path="res://flats/fill.png" id="3_2q2oy"]
+
+[node name="btl_left_big" type="Sprite2D"]
+texture = ExtResource("1_nyfbw")
+centered = false
+script = ExtResource("2_v5pwv")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+offset_left = 11.0
+offset_top = 67.0
+offset_right = 407.0
+offset_bottom = 120.0
+scale = Vector2(0.695149, 0.693878)
+value = 40.0
+texture_under = ExtResource("2_lfvjt")
+texture_progress = ExtResource("3_2q2oy")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 43.0
+offset_top = 23.0
+offset_right = 272.0
+offset_bottom = 58.0
+theme_override_font_sizes/font_size = 24
+text = "NAME HERE"

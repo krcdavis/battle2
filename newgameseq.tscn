@@ -1,0 +1,155 @@
+[gd_scene load_steps=6 format=3 uid="uid://bysd15vjmsq8t"]
+
+[ext_resource type="Script" path="res://newgameseq.gd" id="1_8fip6"]
+[ext_resource type="PackedScene" uid="uid://mo7t3wl8b7s7" path="res://optbase.tscn" id="3_7n8hf"]
+[ext_resource type="Texture2D" uid="uid://46rand0api2b" path="res://flats/label_bg_b.png" id="3_su1yo"]
+[ext_resource type="Texture2D" uid="uid://dbt5f0abo63c" path="res://flats/ard.png" id="5_k84lc"]
+[ext_resource type="Texture2D" uid="uid://c8cy78vh7fi3s" path="res://flats/textbox.png" id="6_ow1ls"]
+
+[node name="newgameseq" type="CanvasLayer"]
+script = ExtResource("1_8fip6")
+
+[node name="p1" parent="." instance=ExtResource("3_7n8hf")]
+visible = false
+position = Vector2(92, 47)
+
+[node name="Sprite2D" parent="p1" index="0"]
+visible = false
+
+[node name="Sprite2D2" parent="p1" index="1"]
+visible = false
+
+[node name="Label" parent="p1" index="2"]
+offset_left = 23.0
+offset_top = 32.0
+offset_right = 233.0
+offset_bottom = 134.0
+theme_override_font_sizes/font_size = 22
+text = "AAAAAAAAAA
+dddddddddd
+dddddddddd"
+metadata/_edit_use_anchors_ = true
+
+[node name="Arr" parent="p1" index="3"]
+position = Vector2(145, 360)
+rotation = -3.14159
+texture = ExtResource("5_k84lc")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="p1"]
+z_index = -1
+offset_right = 244.0
+offset_bottom = 328.0
+texture = ExtResource("3_su1yo")
+patch_margin_left = 12
+patch_margin_top = 12
+patch_margin_right = 12
+patch_margin_bottom = 12
+
+[node name="p2" parent="." instance=ExtResource("3_7n8hf")]
+visible = false
+position = Vector2(460, 47)
+
+[node name="Sprite2D" parent="p2" index="0"]
+visible = false
+
+[node name="Sprite2D2" parent="p2" index="1"]
+visible = false
+
+[node name="Label" parent="p2" index="2"]
+offset_left = 23.0
+offset_top = 32.0
+offset_right = 233.0
+offset_bottom = 134.0
+theme_override_font_sizes/font_size = 22
+text = "AAAAAAAAAA
+dddddddddd
+dddddddddd"
+metadata/_edit_use_anchors_ = true
+
+[node name="Arr" parent="p2" index="3"]
+position = Vector2(145, 360)
+rotation = -3.14159
+texture = ExtResource("5_k84lc")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="p2"]
+z_index = -1
+offset_right = 244.0
+offset_bottom = 328.0
+texture = ExtResource("3_su1yo")
+patch_margin_left = 12
+patch_margin_top = 12
+patch_margin_right = 12
+patch_margin_bottom = 12
+
+[node name="p3" parent="." instance=ExtResource("3_7n8hf")]
+visible = false
+position = Vector2(806, 47)
+
+[node name="Sprite2D" parent="p3" index="0"]
+visible = false
+
+[node name="Sprite2D2" parent="p3" index="1"]
+visible = false
+
+[node name="Label" parent="p3" index="2"]
+offset_left = 23.0
+offset_top = 32.0
+offset_right = 233.0
+offset_bottom = 134.0
+theme_override_font_sizes/font_size = 22
+text = "AAAAAAAAAA
+dddddddddd
+dddddddddd"
+metadata/_edit_use_anchors_ = true
+
+[node name="Arr" parent="p3" index="3"]
+position = Vector2(145, 360)
+rotation = -3.14159
+texture = ExtResource("5_k84lc")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="p3"]
+z_index = -1
+offset_right = 244.0
+offset_bottom = 328.0
+texture = ExtResource("3_su1yo")
+patch_margin_left = 12
+patch_margin_top = 12
+patch_margin_right = 12
+patch_margin_bottom = 12
+
+[node name="yn" type="Node2D" parent="."]
+visible = false
+
+[node name="yes" parent="yn" instance=ExtResource("3_7n8hf")]
+position = Vector2(932, 342)
+
+[node name="no" parent="yn" instance=ExtResource("3_7n8hf")]
+position = Vector2(932, 417)
+
+[node name="controls" type="NinePatchRect" parent="."]
+offset_left = 153.0
+offset_top = 55.0
+offset_right = 999.0
+offset_bottom = 426.0
+texture = ExtResource("6_ow1ls")
+patch_margin_left = 4
+patch_margin_top = 6
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="Label" type="Label" parent="controls"]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 44.0
+offset_right = 758.0
+offset_bottom = 324.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Controls:
+Arrow keys to move, enter to select
+Some menus use mouse"
+horizontal_alignment = 1
+
+[editable path="p1"]
+[editable path="p2"]
+[editable path="p3"]

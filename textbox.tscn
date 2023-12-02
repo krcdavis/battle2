@@ -1,0 +1,74 @@
+[gd_scene load_steps=5 format=3 uid="uid://b2oenv5s35rgo"]
+
+[ext_resource type="Texture2D" uid="uid://c8cy78vh7fi3s" path="res://flats/textbox.png" id="1_7dmfi"]
+[ext_resource type="Script" path="res://textbox.gd" id="2_13opd"]
+[ext_resource type="Texture2D" uid="uid://dbt5f0abo63c" path="res://flats/ard.png" id="3_ilhbo"]
+[ext_resource type="Texture2D" uid="uid://cpgqg502ubnx6" path="res://flats/btl-optn.png" id="4_s8cli"]
+
+[node name="textbox" type="NinePatchRect"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -560.0
+offset_top = -172.0
+offset_right = 558.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_7dmfi")
+script = ExtResource("2_13opd")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+clip_contents = false
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 21.0
+offset_top = -57.0
+offset_right = 739.0
+offset_bottom = 59.0
+grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 25
+text = "sdggdbxvb
+xdgbcxgdb
+bxcv"
+
+[node name="Timer" type="Timer" parent="RichTextLabel"]
+
+[node name="Timer2" type="Timer" parent="RichTextLabel"]
+
+[node name="arrow" type="Sprite2D" parent="RichTextLabel"]
+position = Vector2(677, 72)
+texture = ExtResource("3_ilhbo")
+centered = false
+
+[node name="name" type="NinePatchRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 21.0
+offset_top = -27.0
+offset_right = 236.0
+offset_bottom = 21.0
+texture = ExtResource("4_s8cli")
+patch_margin_left = 7
+patch_margin_top = 7
+patch_margin_right = 7
+patch_margin_bottom = 7
+
+[node name="Label" type="Label" parent="name"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 10.0
+offset_top = -11.5
+offset_right = 50.0
+offset_bottom = 11.5
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 22
+text = "how stretch aaaaaaaa"

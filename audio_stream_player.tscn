@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dy2je6qpoowx4"]
+
+[ext_resource type="AudioStream" uid="uid://lqkdg8bqo443" path="res://Eterna Forest (Resampled) loopable.mp3" id="1_sq2kb"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_sq2kb")

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsw3pcpsvly54"]
+
+[ext_resource type="PackedScene" uid="uid://b2oenv5s35rgo" path="res://textbox.tscn" id="1_0ny8x"]
+[ext_resource type="Script" path="res://hud.gd" id="1_twkbq"]
+
+[node name="hud" type="CanvasLayer"]
+script = ExtResource("1_twkbq")
+
+[node name="textbox" parent="." instance=ExtResource("1_0ny8x")]
+
+[node name="RichTextLabel" parent="textbox" index="0"]
+offset_right = 1094.0
+
+[node name="arrow" parent="textbox/RichTextLabel" index="3"]
+position = Vector2(1010, 72)
+
+[editable path="textbox"]

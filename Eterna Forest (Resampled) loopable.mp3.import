@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://lqkdg8bqo443"
+path="res://.godot/imported/Eterna Forest (Resampled) loopable.mp3-1f8737eeccc80d601b0ad6ead18a40ff.mp3str"
+
+[deps]
+
+source_file="res://Eterna Forest (Resampled) loopable.mp3"
+dest_files=["res://.godot/imported/Eterna Forest (Resampled) loopable.mp3-1f8737eeccc80d601b0ad6ead18a40ff.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
